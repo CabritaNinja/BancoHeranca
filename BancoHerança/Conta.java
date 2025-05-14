@@ -1,5 +1,5 @@
 
-public class Conta {
+abstract public class Conta {
 
      private String senha, banco;
      private int numConta, agencia;
@@ -74,4 +74,6 @@ public class Conta {
     public void AdicionarSaldo(double valor){
         saldo = saldo + valor;
     }
+     abstract public boolean sacar( double valor);
+     abstract public boolean trasferencia(Conta acao , double valor );    
 }
